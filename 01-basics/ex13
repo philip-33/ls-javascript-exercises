@@ -1,0 +1,6 @@
+'12' < '9'
+// this evaluates to false (this would be correct if they were Number types)
+// I missed the quotes, meaning it's a string
+// In this case, javascript uses a character-by-character comparison
+// Since '1' is less than '9', the whole expression evaluates to true
+// (-_- )ﾉ ⌒┻━┻

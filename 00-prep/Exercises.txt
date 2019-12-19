@@ -1,0 +1,71 @@
+// Exercises from Preparation
+
+1.
+mkdir my_folder
+cd my_folder
+touch one.js, two.js
+
+console.log('this is file one');
+console.log('this is file two');
+
+$ node one.js
+this is file one
+$ node two.js
+this is file two
+
+2.
+cd ..
+rm -rf ./my_folder
+// in this case, the -f was unnecessary. 
+// beware: -f suppresses some messages/prompts
+
+3.
+mkdir preparations_exercises
+touch foo.js
+
+4. 
+NODE:
+$ node foo.js
+bar
+
+NODE REPL:
+> var foo = 'bar';
+undefined
+> console.log(foo);
+bar
+undefined
+> foo;
+'bar'
+
+CHROME:
+> var foo = 'bar';
+console.log(foo);
+foo;
+bar
+
+5.
+substring - String method, prototyped
+create - Object method, static
+fromCharCode - String method, static
+slice - String and Array method, prototyped
+// the methods that translate are static (copy data)
+// the methods that manipulate are prototyped (logic required)
+
+6. VARIABLES
+index
+lazyDog
+operand2
+
+7. FUNCTIONS
+index
+CatName (constructors only)
+lazyDog
+operand2
+
+8. CONSTANTS
+BIG_NUMBER
+
+9. NOPES
+snake_case
+quick_Fox
+1stCharacter

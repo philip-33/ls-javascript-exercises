@@ -1,0 +1,12 @@
+/*
+Identify the data type for each of the following values:
+*/
+
+'true' - string
+false - boolean
+1.5 - float/decimal
+2 - integer
+undefined - undefined
+{ foo: 'bar' } - object (key/value)
+
+// numbers in Javascript are just numbers, not multiple types like C/Java
