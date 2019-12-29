@@ -23,3 +23,23 @@ let objToCopy = {
   foo: 1,
   bar: 2,
 };
+
+function copyObj (inputObject, keyArray) {
+  //instance the final copied object
+  let outputObject = {};
+
+  //check if keyArray was defined. If not, generate it
+  keyArray = keyArray || Object.keys(inputObject);
+  
+  //generate a copy of the object based on the key list
+  keyArray.forEach(key => {
+    outputObject[key] = inputObject[key];
+  });
+
+  return outputObject;
+};
+
+console.log(copyObj(objToCopy));
+console.log(copyObj(objToCopy, ['foo']));
+console.log(copyObj(objToCopy, ['bar']));
+console.log(copyObj(objToCopy, ['bar','foo']));
