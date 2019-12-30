@@ -14,6 +14,18 @@ let words = [
 ];
 
 function logMatch(content, filter) {
-  //apply filter (regex) to each item
-  //all matches are dumped to the console
-}
+  //apply filter (regex) to each item in the array
+  content.forEach(value => {
+    if (filter.test(value)) {
+      //all matches are dumped to the console
+      console.log(value);
+    }
+  });
+};
+
+logMatch(words, /al/);
+// 'critical'
+// 'Fireball'
+logMatch(words, /ow/);
+// 'saving throw'
+// 'crossbow;
